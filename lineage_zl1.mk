@@ -22,7 +22,11 @@ $(call inherit-product, device/leeco/zl1/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_OPLAUNCHER := true
+SAKURA_MAINTAINER := AndyCong
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
 PRODUCT_NAME := lineage_zl1
 PRODUCT_DEVICE := zl1
 PRODUCT_MANUFACTURER := LeEco
